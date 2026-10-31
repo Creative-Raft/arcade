@@ -1,0 +1,10 @@
+##生成临时地图,避免新的数字被合成
+data modify storage 2048:mid map_s set from storage 2048:base map
+##逐行进行
+scoreboard players set #y 2048_cal 0
+function 2048:control/right/y
+##替换
+function 2048:control/replace/start
+
+##结束后,复制到转置
+function 2048:start/transpos/start

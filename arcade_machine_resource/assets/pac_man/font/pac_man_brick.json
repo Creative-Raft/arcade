@@ -1,0 +1,31 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/brick/brick.png",
+            "chars": [
+                "a"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/brick/background.png",
+            "chars": [
+                "b"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/brick/door.png",
+            "chars": [
+                "c"
+            ],
+            "ascent": 0,
+            "height": 10
+        }
+    ]
+}

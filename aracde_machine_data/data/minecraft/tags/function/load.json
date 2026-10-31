@@ -1,0 +1,11 @@
+{
+    "values": [
+        "arcade_machine:load",
+        "pac_man:load",
+        "2048:load",
+        "sneak:load",
+        "russia:load",
+        "russia_pk:load"
+    ],
+    "replace": false
+}

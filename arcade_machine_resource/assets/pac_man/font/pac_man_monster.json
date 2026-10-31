@@ -1,0 +1,40 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/monster/orange.png",
+            "chars": [
+                "a"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/monster/blue.png",
+            "chars": [
+                "b"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/monster/pink.png",
+            "chars": [
+                "c"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/monster/red.png",
+            "chars": [
+                "d"
+            ],
+            "ascent": 0,
+            "height": 10
+        }
+    ]
+}

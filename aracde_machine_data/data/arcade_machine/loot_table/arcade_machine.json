@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "orange_cushion",
+                    "modifier": [
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "custom_name": {
+                                    "text": "街机"
+                                },
+                                "item_model": "arcade_machine:arcade_machine",
+                                "entity_data": {
+                                    "id": "cushion",
+                                    "Tags": ["arcade_machine_summon"]
+                                },
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

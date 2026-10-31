@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "type":{
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_tags": {
+                            "all_of": [
+                                "arcade_machine_int"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "arcade_machine:normal_int/sit_mid"
+    }
+}

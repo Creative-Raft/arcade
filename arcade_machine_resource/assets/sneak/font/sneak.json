@@ -1,0 +1,82 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/sneak/head/0.png",
+            "chars": [
+                "a"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/sneak/head/1.png",
+            "chars": [
+                "b"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/sneak/head/2.png",
+            "chars": [
+                "c"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/sneak/head/3.png",
+            "chars": [
+                "d"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/sneak/body.png",
+            "chars": [
+                "e"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/background.png",
+            "chars": [
+                "f"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/bean.png",
+            "chars": [
+                "g"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "sneak:font/you.png",
+            "chars": [
+                "h"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+                "#":-1
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "type":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_tags": {
+                            "all_of": [
+                                "arcade_machine_int"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "arcade_machine:normal_int/des_mid"
+    }
+}

@@ -1,0 +1,1 @@
+$data modify storage russia:game body append from storage russia:base texture[$(num)]

@@ -1,0 +1,1 @@
+$data modify storage pac_man:game game.map_all[$(y)][$(x)] set value $(num)

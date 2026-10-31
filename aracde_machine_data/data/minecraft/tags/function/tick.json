@@ -1,0 +1,11 @@
+{
+    "values": [
+        "arcade_machine:tick",
+        "pac_man:tick",
+        "2048:tick",
+        "sneak:tick",
+        "russia:tick",
+        "russia_pk:tick"
+    ],
+    "replace": false
+}

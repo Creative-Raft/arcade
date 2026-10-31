@@ -1,0 +1,85 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/normal.png",
+            "chars": [
+                "a"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/strong.png",
+            "chars": [
+                "b"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/cherry.png",
+            "chars": [
+                "c"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/strawberry.png",
+            "chars": [
+                "d"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/orange.png",
+            "chars": [
+                "e"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/apple.png",
+            "chars": [
+                "f"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/grape.png",
+            "chars": [
+                "g"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/ball.png",
+            "chars": [
+                "h"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/beans/key.png",
+            "chars": [
+                "i"
+            ],
+            "ascent": 0,
+            "height": 10
+        }
+    ]
+}

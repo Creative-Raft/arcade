@@ -1,0 +1,118 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/0.png",
+            "chars": [
+                "a"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/2.png",
+            "chars": [
+                "b"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/4.png",
+            "chars": [
+                "c"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/8.png",
+            "chars": [
+                "d"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/16.png",
+            "chars": [
+                "e"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/32.png",
+            "chars": [
+                "f"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/64.png",
+            "chars": [
+                "g"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/128.png",
+            "chars": [
+                "h"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/256.png",
+            "chars": [
+                "i"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/512.png",
+            "chars": [
+                "j"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/1024.png",
+            "chars": [
+                "k"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "2048:font/2048.png",
+            "chars": [
+                "l"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+                "#":-0.98
+            }
+        }
+    ]
+}

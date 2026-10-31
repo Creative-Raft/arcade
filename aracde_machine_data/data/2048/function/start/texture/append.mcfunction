@@ -1,0 +1,13 @@
+##插入纹理
+execute if score #num 2048_cal matches 0 run data modify storage 2048:game body append from storage 2048:base texture[0]
+execute if score #num 2048_cal matches 2 run data modify storage 2048:game body append from storage 2048:base texture[1]
+execute if score #num 2048_cal matches 4 run data modify storage 2048:game body append from storage 2048:base texture[2]
+execute if score #num 2048_cal matches 8 run data modify storage 2048:game body append from storage 2048:base texture[3]
+execute if score #num 2048_cal matches 16 run data modify storage 2048:game body append from storage 2048:base texture[4]
+execute if score #num 2048_cal matches 32 run data modify storage 2048:game body append from storage 2048:base texture[5]
+execute if score #num 2048_cal matches 64 run data modify storage 2048:game body append from storage 2048:base texture[6]
+execute if score #num 2048_cal matches 128 run data modify storage 2048:game body append from storage 2048:base texture[7]
+execute if score #num 2048_cal matches 256 run data modify storage 2048:game body append from storage 2048:base texture[8]
+execute if score #num 2048_cal matches 512 run data modify storage 2048:game body append from storage 2048:base texture[9]
+execute if score #num 2048_cal matches 1024 run data modify storage 2048:game body append from storage 2048:base texture[10]
+execute if score #num 2048_cal matches 2048 run data modify storage 2048:game body append from storage 2048:base texture[11]

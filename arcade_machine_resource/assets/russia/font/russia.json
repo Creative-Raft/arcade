@@ -1,0 +1,91 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/background.png",
+            "chars": [
+                "a"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/red.png",
+            "chars": [
+                "b"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/green.png",
+            "chars": [
+                "c"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/blue.png",
+            "chars": [
+                "d"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/aqua.png",
+            "chars": [
+                "e"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/yellow.png",
+            "chars": [
+                "f"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/orange.png",
+            "chars": [
+                "g"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/purple.png",
+            "chars": [
+                "h"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 0,
+            "height": 10,
+            "file": "russia:font/rubbish.png",
+            "chars": [
+                "i"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+                "#":-1
+            }
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_0.png",
+            "chars": [
+                "a"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_1.png",
+            "chars": [
+                "b"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_2.png",
+            "chars": [
+                "c"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_3.png",
+            "chars": [
+                "d"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_0.png",
+            "chars": [
+                "e"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_1.png",
+            "chars": [
+                "f"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_2.png",
+            "chars": [
+                "g"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_3.png",
+            "chars": [
+                "h"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_0_strong.png",
+            "chars": [
+                "i"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_1_strong.png",
+            "chars": [
+                "j"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_2_strong.png",
+            "chars": [
+                "k"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_close_3_strong.png",
+            "chars": [
+                "l"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_0_strong.png",
+            "chars": [
+                "m"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_1_strong.png",
+            "chars": [
+                "n"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_2_strong.png",
+            "chars": [
+                "o"
+            ],
+            "ascent": 0,
+            "height": 10
+        },
+        {
+            "type": "bitmap",
+            "file": "pac_man:font/pac_man/pac_man_open_3_strong.png",
+            "chars": [
+                "p"
+            ],
+            "ascent": 0,
+            "height": 10
+        }
+    ]
+}
