@@ -17,7 +17,7 @@
 ## 目录结构
 
 ```text
-pac_man/
+arcade_machine/
 ├── pack.mcmeta
 ├── README.md
 └── data/
@@ -40,17 +40,17 @@ pac_man/
         └── result/{lose,win,opponent}             # 胜负
 ```
 
-配套资源包放在 `resourcepacks/pac_man/`，提供各游戏的字体与字形：
+配套资源包放在 `resourcepacks`内，提供各游戏的字体与字形：
 `2048:2048`、`sneak:sneak`、`russia:russia`、`pac_man:pac_man*`、`arcade_machine` 的物品模型。
 
 ---
 
 ## 安装
 
-1. 把 `pac_man` 目录放进存档的 `datapacks/` 下；
-2. 把配套资源包 `pac_man` 放进 `resourcepacks/`，并在游戏内启用（**必须启用**，否则字形缺失）；
+1. 把 `arcade_machine_data` 目录放进存档的 `datapacks/` 下；
+2. 把配套资源包 `arcade_machine_resource` 放进 `resourcepacks/`，并在游戏内启用（**必须启用**，否则字形缺失）；
 3. 执行 `/reload`，然后检查日志里没有 `Failed to load function`；
-4. 街机机器需要被投放：`/function arcade_machine:summon/start`（或使用存档内已有的机器）。
+4. 街机机器需要通过：`/loot give @s loot arcade_machine:arcade_machine`获得并放下（或使用存档内已有的机器）。
 
 ---
 
@@ -105,7 +105,7 @@ data modify entity @s data.game  set from storage <ns>:game game
 data modify entity @s data.score set from storage <ns>:game score
 ```
 
-因此**多台机器互不干扰**，且跨区块/重登不丢档。
+因此**多台机器互不干扰**。
 
 ### 渲染管线
 
@@ -156,38 +156,10 @@ game.map_all（二维整数网格）
 ## 调试
 
 ```mcfunction
-/data get storage russia:game game.map          ## 看盘面（应为 22 行，行数变了说明有幽灵行）
+/data get storage russia:game game.map          ## 看盘面（应渲染为 20 行，命令存储内为 22 行，行数变了说明有幽灵行）
 /data get storage russia:pk rubbish             ## 看上一行垃圾行的内容（含 8 的值）
 /data get storage sneak:mid wander              ## 看游走权重 ray/w/total/dir
 /scoreboard players get #lines russia_cal       ## 累计消除行数（满 4 发垃圾）
 /scoreboard players get #pace sneak_cal         ## ≤0 说明命令链曾被截断
 /data get storage russia:pk code                ## 看大厅房间号
-```
-
-批量静态检查（改完函数后跑一遍，进游戏前就能拦掉大部分问题）：
-
-```powershell
-$d='<存档>\datapacks\pac_man\data'
-$files=Get-ChildItem -LiteralPath $d -Recurse -File -Filter *.mcfunction
-## 1) 引用是否都解析得到
-$exist=@(); foreach($f in $files){ $r=$f.FullName.Substring($d.Length+1) -replace '\\','/'
-  if($r -match '^([a-z_0-9]+)/function/(.+)\.mcfunction$'){ $exist += ($Matches[1]+':'+$Matches[2]) } }
-$miss=@(); foreach($m in ($files | Select-String -Pattern 'function ([a-z_0-9]+:[a-z_0-9/]+)' -AllMatches |
-  ForEach-Object { $_.Matches } | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)){
-  if($exist -notcontains $m){ $miss += $m } }
-"未解析引用: " + $miss.Count
-## 2) 宏函数是否都带 with storage
-foreach($f in ($files | Where-Object { (Get-Content $_.FullName | Where-Object { $_ -match '\$\(' }).Count -gt 0 })){
-  $id=($f.FullName.Substring($d.Length+1) -replace '\\','/' -replace '\.mcfunction$','')
-  $bad=($files | Select-String -Pattern ('function ' + [regex]::Escape($id) + '( |$)') | Where-Object { $_.Line -notmatch 'with storage' }).Count
-  if($bad){ "缺 with storage: $id ($bad)" }
-}
-## 3) 会加载失败的写法（宏放在数字字面量位置）
-($files | Select-String -Pattern 'scoreboard players (add|remove)\b.*\$\(').Count
-## 4) 裸 @e（注释行里的不算）
-($files | Select-String -Pattern '@e(?![\[a-zA-Z_])' | Where-Object { $_.Line -notmatch '^\s*##' }).Count
-## 5) 单实体命令的选择器是否漏了 limit=1
-foreach($f in $files){ foreach($l in (Get-Content $f.FullName)){
-  if($l -notmatch '^\s*##' -and $l -match 'data\s+(merge|modify|get)\s+entity\s+@e\[' -and $l -notmatch 'limit='){
-    "缺 limit=1: " + $f.Name + " :: " + $l.Trim() } } }
 ```
